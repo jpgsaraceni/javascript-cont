@@ -1,0 +1,1 @@
+Página (com interface mínima para funcionar) exibindo 4 contadores, setáveis pelo usuário, independentes, utilizando uma classe criada no programa.

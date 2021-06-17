@@ -1,0 +1,46 @@
+<!DOCTYPE html />
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Jogo</title>
+  </head>
+
+  <body>
+
+    <div class="tela" id="tela1">
+      <p>Bem vindos!</p>
+      <p>Para começar, informe o número de jogadores e o número de páginas do livro.</p>        
+        <input type="number" id="numeroJogadores" placeholder="Número de jogadores" />
+        <input type="number" id="numeroPaginas" placeholder="Número de páginas" />
+        <button onclick="iniciar()">Iniciar</button>
+    </div>
+    
+    <div class="tela" id="tela2">
+      <p>O número da página sorteada foi <strong><span id="paginaSorteada"></span></strong>.</p>
+      <p>Insira o conteúdo da página:</p>
+      <input type="text" id="textoPagina" placeholder="Texto da página" />
+      <button onclick="continuarParaPalpites()">Continuar</button>
+    </div>
+    
+    <div class="tela" id="tela3">
+      <p>A letra sorteada foi <strong><span id="letraSorteada"></span></strong>.</p>
+      <p>Informe os palpites de cada jogador:</p>
+      <div id="entradasPalpites"></div>
+      <button onclick="calcularVencedor()">Finalizar</button>
+    </div>
+    
+    <div class="tela" id="tela4">
+      <p>A letra <span id="letraSorteada2"></span> apareceu <span id="resposta"></span> vezes.</p>
+      <p>O vencedor do desafio foi o jogador <strong><span id="vencedor"></span></strong>.</p>
+    </div>
+    
+    <script src="script.js"></script>
+
+  </body>
+
+</html>

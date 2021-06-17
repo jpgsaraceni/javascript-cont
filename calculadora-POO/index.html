@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="calculadora">
+        <div id="display"></div>
+        <div id="teclas">
+            <div id="secaoNumeros">
+                <div class="linha">
+                    <button class="botaoNumero" id="digito7" onclick="recebeNumero(7)">7</button>
+                    <button class="botaoNumero" id="digito8" onclick="recebeNumero(8)">8</button>
+                    <button class="botaoNumero" id="digito9" onclick="recebeNumero(9)">9</button>
+                </div>
+                <div class="linha">
+                    <button class="botaoNumero" id="digito4" onclick="recebeNumero(4)">4</button>
+                    <button class="botaoNumero" id="digito5" onclick="recebeNumero(5)">5</button>
+                    <button class="botaoNumero" id="digito6" onclick="recebeNumero(6)">6</button>
+                </div>
+                <div class="linha">
+                    <button class="botaoNumero" id="digito1" onclick="recebeNumero(1)">1</button>
+                    <button class="botaoNumero" id="digito2" onclick="recebeNumero(2)">2</button>
+                    <button class="botaoNumero" id="digito3" onclick="recebeNumero(3)">3</button>
+                </div>
+                <div class="linha">
+                    <button class="vazio"> </button>
+                    <button class="botaoNumero" id="digito0" onclick="recebeNumero(0)">0</button>
+                    <button class="vazio"> </button>
+                </div>
+            </div>
+            <div id="secaoOperadores">
+                <button class="botaoOperador" id="mais" onclick="recebeOperador('soma')">+</button>
+                <button class="botaoOperador" id="menos" onclick="recebeOperador('subtracao')">-</button>
+                <button class="botaoOperador" id="vezes" onclick="recebeOperador('multiplicacao')">x</button>
+                <button class="botaoOperador" id="barra" onclick="recebeOperador('divisao')">&#247;</button>
+            </div>
+            <div id="secaoFinalizar">
+                <button id="apagaTudo" onclick="recarrega()">AC</button>
+                <button id="botaoIgual" onclick="calcula()">=</button>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>

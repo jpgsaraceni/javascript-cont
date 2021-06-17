@@ -1,0 +1,22 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #CEDEF2;
+    display: flex;
+}
+
+.tela{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin: auto;
+    flex-direction: column;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+}
+
+#tela2, #tela3, #tela4{
+    display: none;
+}

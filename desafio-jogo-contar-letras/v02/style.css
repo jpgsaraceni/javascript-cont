@@ -1,0 +1,55 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+    text-align: center;
+}
+
+body{
+    background-color: #CEDEF2;
+    display: flex;
+}
+
+input{
+    margin-left: 5px;
+    background-color: white;
+    border: solid;
+    border-width: thin;
+    border-radius: 5px;
+    border-color: #D7D7D9;
+    margin-top: 5px;
+}
+
+textarea{
+    text-align: start;
+}
+
+button{
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    background-color: #A7C8F2;
+    border-radius: 5px;
+    width: fit-content;
+    align-self: center;
+}
+
+.tela{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    margin: auto;
+    padding: 10px;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px #A7C8F2;
+    border-radius: 2px;
+}
+
+#tela2, #tela3, #tela4{
+    display: none;
+}
+
+#textoPagina{
+    height:400px;
+}

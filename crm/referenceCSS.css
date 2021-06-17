@@ -1,0 +1,64 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    background-color: #30BF6E;
+}
+
+#tudo, form{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tudo{
+    width: fit-content;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+}
+
+.campo{
+    display: flex;
+    padding: 0.5em 0;
+}
+
+input{
+    width: 100px;
+    margin-left: 5px;
+    background-color: white;
+    border: solid;
+    border-width: thin;
+    border-radius: 5px;
+    border-color: #D7D7D9;
+}
+
+.botoes{
+    display: flex;
+}
+
+#resp{
+    display: flex;
+}
+
+legend{
+    text-align: center;
+    font-weight: bold;
+}
+
+button{
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    background-color: #197340;
+    border-radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

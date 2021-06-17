@@ -1,0 +1,1 @@
+Exercício para fixação dos conceitos iniciais de promises.

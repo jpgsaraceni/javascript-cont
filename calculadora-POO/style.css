@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #22F2B7;
+    font-size: x-large;
+}
+
+body{
+    background-color: #404040;
+    display: flex;
+    justify-content: center;
+}
+
+#calculadora{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+    width: 300px;
+    background-color: #F2F2F2;
+    /* box-shadow: 0 0 10px #F2F2F2; */
+    border-radius: 2px;
+}
+
+#teclas{
+    display: flex;
+}
+
+#linha{
+    display: flex;
+}
+
+#secaoOperadores, #secaoFinalizar{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+
+#secaoNumeros{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+.linha{
+    display: flex;
+}
+
+#display{
+    width: auto;
+    height: 50px;
+    background-color: #636363;
+    margin-bottom: 10px;
+}
+
+button{
+    border: solid;
+    border-width: 1px;
+    width: -webkit-fill-available;
+    height: 2.5em;
+    border-color: #F2F2F2;
+}
+
+.botaoNumero, .vazio{
+    background-color: #636363;
+}
+
+#botaoIgual, #apagaTudo,  .botaoOperador{
+    background-color: #04C4D9;
+    height: -webkit-fill-available;
+}

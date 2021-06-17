@@ -1,0 +1,72 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    background-color: #30BF6E;
+    font-size: 24;
+}
+
+#all{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 900px;
+}
+
+.screen{
+    display: none;
+    flex-direction: column;
+    border: solid;
+    padding: 10px;
+    margin-top: 10%;
+    width: 300px;
+}
+
+button{
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    background-color: #197340;
+    border-radius: 5px;
+    align-self: center;
+    display: flex;
+}
+
+input{
+    background-color: white;
+    border: solid;
+    border-width: thin;
+    border-radius: 5px;
+    border-color: #D7D7D9;
+    margin-top: 15px;
+}
+
+.errorMessage{
+    color:red;
+    display: none;
+    align-self: center;
+    text-align: center;
+}
+
+/* LOGIN PAGE */
+
+#loginPage, #signUpBox{
+    display: flex;
+}
+
+#signUpBox{
+    flex-direction: row;
+    border: none;
+    border-top: solid;
+    justify-content: space-around;
+    width: auto;
+}
+
+#newQMark{
+    margin-top: 20px;
+    display: flex;
+}
+
+#logout{
+    display: none;
+    cursor: pointer;
+}

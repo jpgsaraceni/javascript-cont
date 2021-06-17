@@ -1,0 +1,15 @@
+const fs = require('fs');
+
+//////////////////////////
+//     ASSÍNCRONA       //
+//////////////////////////
+
+fs.mkdir('dirA', err =>{
+    if (err) throw err;
+});
+
+///////////////////////////
+//      SÍNCRONA         //
+///////////////////////////
+
+fs.mkdirSync('dirA_sync');

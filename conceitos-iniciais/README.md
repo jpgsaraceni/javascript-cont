@@ -1,0 +1,1 @@
+Esercícios conceituais demonstrando formas de declarar variáveis (var, let, const), hoisting e funções.

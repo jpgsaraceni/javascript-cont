@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Contador</title>
+</head>
+<body>
+    <audio id="myAudio">
+        <source src="audio/acabou.mp3" type="audio/mp3">
+    </audio>
+    <div id="display1">
+        <input type="number" name="hours" id="hours1" placeholder="00">:
+        <input type="number" name="minutes" id="minutes1" placeholder="00">:
+        <input type="number" name="seconds" id="seconds1" placeholder="00">:
+        <input type="number" name="cseconds" id="cseconds1" placeholder="00">
+        <div class="mensagem" id="mensagem1">ACABOU!</div>
+    </div>
+    <button id="start1" onclick="runTimer(1)">Start</button>
+    <button id="pause1" onclick="timer[0].stopTimer()">Pause</button>
+    <button id="clear1" onclick="timer[0].resetTimer(1)">Clear</button>
+
+    <div id="display2">
+        <input type="number" name="hours" id="hours2" placeholder="00">:
+        <input type="number" name="minutes" id="minutes2" placeholder="00">:
+        <input type="number" name="seconds" id="seconds2" placeholder="00">:
+        <input type="number" name="cseconds" id="cseconds2" placeholder="00">
+        <div class="mensagem" id="mensagem2">ACABOU!</div>
+    </div>
+    <button id="start2" onclick="runTimer(2)">Start</button>
+    <button id="pause2" onclick="timer[1].stopTimer()">Pause</button>
+    <button id="clear2" onclick="timer[1].resetTimer(2)">Clear</button>
+    <div id="display3">
+        <input type="number" name="hours" id="hours3" placeholder="00">:
+        <input type="number" name="minutes" id="minutes3" placeholder="00">:
+        <input type="number" name="seconds" id="seconds3" placeholder="00">:
+        <input type="number" name="cseconds" id="cseconds3" placeholder="00">
+        <div class="mensagem" id="mensagem3">ACABOU!</div>
+    </div>
+    <button id="start3" onclick="runTimer(3)">Start</button>
+    <button id="pause3" onclick="timer[2].stopTimer()">Pause</button>
+    <button id="clear3" onclick="timer[2].resetTimer(3)">Clear</button>    
+    <div id="display4">
+        <input type="number" name="hours" id="hours4" placeholder="00">:
+        <input type="number" name="minutes" id="minutes4" placeholder="00">:
+        <input type="number" name="seconds" id="seconds4" placeholder="00">:
+        <input type="number" name="cseconds" id="cseconds4" placeholder="00">
+        <div class="mensagem" id="mensagem4">ACABOU!</div>
+    </div>
+    <button id="start4" onclick="runTimer(4)">Start</button>
+    <button id="pause4" onclick="timer[3].stopTimer()">Pause</button>
+    <button id="clear4" onclick="timer[3].resetTimer(4)">Clear</button>
+
+</body>
+</html>

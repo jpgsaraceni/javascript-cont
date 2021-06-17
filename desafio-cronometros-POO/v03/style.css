@@ -1,0 +1,8 @@
+input{
+    border: none;
+    width: 40px;
+}
+
+.mensagem{
+    display: none;
+}

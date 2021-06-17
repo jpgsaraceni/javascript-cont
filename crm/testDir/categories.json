@@ -1,0 +1,6 @@
+[
+    {"id":"testCategory", "category":"Categoria teste"},
+    {"id":"food", "category":"Alimentação"},
+    {"id":"bills", "category":"Contas"},
+    {"id":"entertainment", "category":"Entretenimento"}
+]

@@ -1,0 +1,1 @@
+Criação de um CRM com interface básica para cadastro, consulta e remoção de clientes.

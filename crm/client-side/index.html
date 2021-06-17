@@ -1,0 +1,74 @@
+<!DOCTYPE html />
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Mão Fechada</title>    
+  </head>
+
+  <body>
+    <div id="logOut" onclick="logOut()">Sair</div>
+
+    <div id="all">
+
+        <div id="loginPage" class="screen">
+            <p id="welcomeLogin">Bem-vindo ao <span>Mão Fechada</span></p>
+            <input type="text" name="loginUser" id="loginUser" placeholder="login"/>
+            <input type="password" name="loginPassword" id="loginPassword" placeholder="senha"/>
+            <button id="loginButton" onclick="login()">Entrar</button>
+            <span class="errorMessage" id="loginErrorMessage"></span>
+            <div id="signUpBox" class="screen">
+              <span id="newQMark">Novo aqui?</span>
+              <button id="openSignUpButton" onclick="openSignUp()">Cadastre-se</button>
+            </div>
+        </div>
+
+        <div id="signUpPage" class="screen">
+            <p>Novo usuário</p>
+            <input type="text" name="signUpUser" id="signUpUser" placeholder="nome de usuário*" />
+            <input type="password" name="signUpPassword" id="signUpPassword" placeholder="senha*" />
+            <input type="password" name="signUpConfirmPassword" id="signUpConfirmPassword" placeholder="confirmar senha*" />
+            <input type= "email" id="signUpEmail" placeholder="email" />
+            <input type="tel" id="signUpPhoneNumber" placeholder="telefone" />
+            <button id="signUp" onclick="signUp()">Salvar e entrar</button>
+            <span class="errorMessage" id="signUpErrorMessage"></span>
+        </div>
+
+        <div id="landingPage" class="screen">
+            <p id="welcomeLanding">Olá, <span id="userNameLanding" class="userName"></span></p>
+            <fieldset id="monthlyTotal">
+              <legend>Seus gastos esse mês:</legend>
+              <span id="monthlyTotal" class="value">R$0.00</span>
+            </fieldset>
+            <button id="viewAll" onclick="openModal(expensesPage)">Ver todos</button>
+            <button id="addExpense" onclick="addExpense()">+ Nova despesa</button>
+        </div>
+
+        <div id="expensesPage" class="screen">
+          *GENERATE DINAMICALLY*
+          <button class="close" onclick="closeModal(expensesPage)">X</button>
+        </div>
+
+        <div id="addExpensePage" class="screen">
+          <label for="category">Escolha a categoria:</label>
+          <select name="category" id="category">
+          </select>
+          <button id="addExpenseCategory" onclick="openModal(addExpenseCategoryPage)">Nova categoria</button>
+          <label for="expDate">Vence em:</label>
+          <input type="date" name="expDate" id="expDate" />
+          <label for="postDate">Despesa realizada em:</label>
+          <input type="date" name="postDate" id="postDate" />
+          <button class="close" onclick="closeModal(addExpensePage)">X</button>
+        </div>  
+
+        <div id="addExpenseCategoryPage" class="screen">
+          <input type="text" name="newCategory" id="newCategory" />
+          <button class="close" onclick="closeModal(addExpenseCategoryPage)">X</button>
+        </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

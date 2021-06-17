@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Módulo 6 Parte 9</title>    
+  </head>
+
+  <body>
+    <div id="all">
+
+
+<h1>Cadastro de Clientes</h1>
+      <fieldset>
+        <legend>Cliente Novo</legend>
+          <div class="campo" id="nome"><input type="text" id="adicionarNome" placeholder="Nome"></div>
+          <div class="campo" id="endereco"><input type="text" id="adicionarEndereco" placeholder="Endereço"></div>
+          <div class="campo" id="complemento"><input type="text" id="adicionarComplemento" placeholder="Complemento"></div>
+          <div class="campo" id="cep"><input type="number" id="adicionarCep" placeholder="CEP"></div>
+          <div class="campo" id="cidade"><input type="text" id="adicionarCidade" placeholder="Cidade"></div>
+          <div class="campo" id="telefone"><input type="number" id="adicionarTelefone" placeholder="Telefone"></div>
+          <div class="campo" id="email"><input type="text" id="adicionarEmail" placeholder="Email"></div>
+          <button id="botaoAdicionar" onclick="adicionar()">Adicionar</button>
+      </fieldset>
+      <fieldset>
+        <legend>Cliente Existente</legend>
+          <input type="text" id="idExistente" placeholder="ID">
+          <div class="botoes">
+            <button id="botaoConsultar" onclick="consultar()">Consultar</button>
+            <button id="botaoEditar" onclick="editar()">Editar</button>
+            <button id="botaoRemover" onclick="remover()">Remover</button>
+          </div>
+      </fieldset>
+      <fieldset>
+        <legend>Clientes Cadastrados:</legend>
+        <p id="mensagemCadastro"></p>
+        <div id="resposta">
+          <div class="valores">
+            <p id="idSaida"></p>
+            <p id="nomeSaida"></p>
+            <p id="enderecoSaida"></p>
+            <p id="complementoSaida"></p>
+            <p id="cepSaida"></p>
+            <p id="cidadeSaida"></p>
+            <p id="telefoneSaida"></p>
+            <p id="emailSaida"></p>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>

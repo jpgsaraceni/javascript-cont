@@ -1,0 +1,1 @@
+Desafio consistindo de desenvolver uma interface simples de um jogo em que o usuário informe quantos jogaderes vão jogar, e o programa sorteia uma letra e os jogadores têm que adivinhar quantas vezes essa letra aparece no em um texto. Quem mais se aproximar da resposta correta vence.
